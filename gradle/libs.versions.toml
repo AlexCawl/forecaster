@@ -16,6 +16,9 @@ kotlin-serialization = "1.6.3"
 lifecycle = "2.8.2"
 lifecycle-extensions = "2.2.0"
 ktor = "1.5.0"
+constraintlayout = "2.1.4"
+navigation-fragment = "2.7.7"
+navigation-ui = "2.7.7"
 
 # Build
 name = "org.alexcawl.forecaster"
@@ -23,9 +26,6 @@ sdkCompile = "34"
 sdkTarget = "34"
 sdkMin = "24"
 java = "VERSION_1_8"
-constraintlayout = "2.1.4"
-navigationFragmentKtx = "2.6.0"
-navigationUiKtx = "2.6.0"
 
 [libraries]
 # Kotlin
@@ -42,6 +42,9 @@ androidx-lifecycle-viewmodel = { group = "androidx.lifecycle", name = "lifecycle
 androidx-lifecycle-runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
 androidx-lifecycle-extensions = { group = "androidx.lifecycle", name = "lifecycle-extensions", version.ref = "lifecycle-extensions" }
 coroutines-extensions = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlin-coroutines" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigation-fragment" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigation-ui" }
 
 # Persistence
 androidx-datastore = { group = "androidx.datastore", name = "datastore-preferences-core", version.ref = "datastore" }
@@ -62,6 +65,3 @@ plugin-kotlin-serialization = { group = "org.jetbrains.kotlin", name = "kotlin-s
 plugin-kotlin-ksp = { group = "com.google.devtools.ksp", name = "com.google.devtools.ksp.gradle.plugin", version.ref = "ksp" }
 plugin-android-application = { group = "com.android.application", name = "com.android.application.gradle.plugin", version.ref = "agp" }
 plugin-android-library = { group = "com.android.library", name = "com.android.library.gradle.plugin", version.ref = "agp" }
-androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
-androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }

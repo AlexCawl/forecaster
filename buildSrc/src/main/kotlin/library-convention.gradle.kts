@@ -24,6 +24,9 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime)
     implementation(libs.androidx.lifecycle.extensions)
     implementation(libs.coroutines.extensions)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.navigation.ui)
+    implementation(libs.androidx.navigation.fragment)
 
     // Network
     implementation(libs.ktor.client)
@@ -48,9 +51,12 @@ android {
     compileSdk = sdkCompile
 
     defaultConfig {
-        targetSdk = sdkTarget
         minSdk = sdkMin
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    lint {
+        targetSdk = sdkTarget
     }
 
     buildTypes {

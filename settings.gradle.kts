@@ -24,3 +24,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "Forecaster"
 include(":app")
+include(":core:common")
+include(":core:data")
+include(":core:network")
+include(":core:ui")

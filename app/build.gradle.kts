@@ -1,6 +1,5 @@
 plugins {
     id("application-convention")
-    id("org.jetbrains.kotlin.android")
 }
 
 android {
@@ -11,13 +10,16 @@ android {
         versionCode = 1
         versionName = "1.0"
     }
+
     buildFeatures {
         viewBinding = true
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
     kotlinOptions {
         jvmTarget = "1.8"
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".MainActivity"
-    android:backgroundTint="@android:color/transparent">
+    android:fitsSystemWindows="false"
+    android:background="@drawable/gradient_anim"
+    tools:context=".MainActivity">
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

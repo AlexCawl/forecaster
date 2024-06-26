@@ -5,6 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="false"
-    android:background="@drawable/gradient_anim"
     tools:context=".MainActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:lottie_rawRes="@raw/sky_animation"
+        app:lottie_loop="true"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

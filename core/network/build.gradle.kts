@@ -5,3 +5,7 @@ plugins {
 android {
     namespace = "org.alexcawl.forecaster.network"
 }
+
+dependencies {
+    implementation(project(":core:common"))
+}

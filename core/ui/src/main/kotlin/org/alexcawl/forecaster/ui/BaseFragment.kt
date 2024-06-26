@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.annotation.LayoutRes
 import androidx.fragment.app.Fragment
+import androidx.viewbinding.ViewBinding
 import org.alexcawl.forecaster.common.Consumer
 
 abstract class BaseFragment<S, A> : Consumer<S>, Fragment {
@@ -11,6 +12,7 @@ abstract class BaseFragment<S, A> : Consumer<S>, Fragment {
     constructor(@LayoutRes contentLayoutId: Int) : super(contentLayoutId)
 
     protected abstract val store: BaseStore<S, A>
+    protected abstract val binding: ViewBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

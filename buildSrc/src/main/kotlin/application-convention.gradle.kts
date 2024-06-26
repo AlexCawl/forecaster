@@ -1,4 +1,3 @@
-import gradle.kotlin.dsl.accessors._d77737fb63c02bd0af3daccce5f88495.implementation
 import org.gradle.accessors.dm.LibrariesForLibs
 
 val libs = the<LibrariesForLibs>()
@@ -29,6 +28,7 @@ dependencies {
     implementation(libs.androidx.navigation.ui)
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.lottie)
+    implementation(libs.androidx.fragment)
 
     // Network
     implementation(libs.ktor.client)

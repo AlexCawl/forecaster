@@ -28,6 +28,7 @@ dependencies {
     implementation(libs.androidx.navigation.ui)
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.lottie)
+    implementation(libs.androidx.fragment)
 
     // Test
     testImplementation(libs.junit)
@@ -50,6 +51,10 @@ android {
 
     lint {
         targetSdk = sdkTarget
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 
     buildTypes {

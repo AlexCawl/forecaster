@@ -26,9 +26,8 @@ android {
 }
 
 dependencies {
-    implementation(libs.material)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.navigation.fragment)
-    implementation(libs.androidx.navigation.ui)
+    implementation(project(":core:common"))
+    implementation(project(":core:data"))
+    implementation(project(":core:network"))
+    implementation(project(":core:ui"))
 }

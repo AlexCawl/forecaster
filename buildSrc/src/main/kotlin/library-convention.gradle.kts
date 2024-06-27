@@ -33,7 +33,10 @@ dependencies {
     // Network
     implementation(libs.ktor.client)
     implementation(libs.ktor.serialization)
+    implementation(libs.ktor.serialization.json)
     implementation(libs.ktor.logging)
+    implementation(libs.ktor.content.negotiation)
+    implementation(libs.slf4j)
 
     // Persistence
     implementation(libs.androidx.datastore)
@@ -82,5 +85,11 @@ android {
 
     kotlinOptions {
         jvmTarget = java.toString()
+    }
+
+    packaging {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
     }
 }

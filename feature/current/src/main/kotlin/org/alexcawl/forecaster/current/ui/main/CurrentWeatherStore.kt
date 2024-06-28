@@ -2,7 +2,7 @@ package org.alexcawl.forecaster.current.ui.main
 
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
-import org.alexcawl.forecaster.ui.BaseStore
+import org.alexcawl.forecaster.ui.mvi.BaseStore
 
 class CurrentWeatherStore @AssistedInject constructor(
 

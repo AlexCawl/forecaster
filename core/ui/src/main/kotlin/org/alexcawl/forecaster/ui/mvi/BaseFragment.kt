@@ -1,4 +1,4 @@
-package org.alexcawl.forecaster.ui
+package org.alexcawl.forecaster.ui.mvi
 
 import android.os.Bundle
 import android.view.View

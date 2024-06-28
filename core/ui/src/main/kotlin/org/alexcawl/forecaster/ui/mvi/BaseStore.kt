@@ -1,4 +1,4 @@
-package org.alexcawl.forecaster.ui
+package org.alexcawl.forecaster.ui.mvi
 
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.lifecycle.viewModelScope
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -36,6 +35,7 @@ abstract class BaseStore<S, A>(initialState: S) : Producer<S>, Consumer<A>, View
                 innerActions.collect(::handle)
             }
         }
+        println(this::class.java)
     }
 
     fun observe(

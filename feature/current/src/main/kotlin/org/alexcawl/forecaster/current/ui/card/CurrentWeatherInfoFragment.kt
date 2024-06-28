@@ -5,10 +5,10 @@ import androidx.viewbinding.ViewBinding
 import org.alexcawl.forecaster.current.R
 import org.alexcawl.forecaster.current.databinding.FragmentCurrentWeatherInfoBinding
 import org.alexcawl.forecaster.current.di.CurrentWeatherComponentHolder
-import org.alexcawl.forecaster.ui.BaseFragment
-import org.alexcawl.forecaster.ui.BaseStore
-import org.alexcawl.forecaster.ui.store
-import org.alexcawl.forecaster.ui.viewBinding
+import org.alexcawl.forecaster.ui.mvi.BaseFragment
+import org.alexcawl.forecaster.ui.mvi.BaseStore
+import org.alexcawl.forecaster.ui.mvi.store
+import org.alexcawl.forecaster.ui.binding.viewBinding
 import javax.inject.Inject
 
 class CurrentWeatherInfoFragment : BaseFragment<CurrentWeatherInfoState, CurrentWeatherInfoAction>(R.layout.fragment_current_weather_info) {

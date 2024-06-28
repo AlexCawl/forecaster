@@ -1,4 +1,4 @@
-package org.alexcawl.forecaster.ui
+package org.alexcawl.forecaster.ui.mvi
 
 import androidx.activity.ComponentActivity
 import androidx.activity.viewModels

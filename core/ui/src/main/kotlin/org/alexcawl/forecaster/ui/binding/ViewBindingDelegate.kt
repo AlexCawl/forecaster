@@ -1,4 +1,4 @@
-package org.alexcawl.forecaster.ui
+package org.alexcawl.forecaster.ui.binding
 
 import android.os.Handler
 import android.os.Looper

@@ -3,7 +3,7 @@ package org.alexcawl.forecaster.di
 import android.content.Context
 import dagger.BindsInstance
 import dagger.Component
-import org.alexcawl.forecaster.MainActivity
+import org.alexcawl.forecaster.ui.MainActivity
 import org.alexcawl.forecaster.current.di.CurrentWeatherComponentDeps
 import org.alexcawl.forecaster.data.DataModule
 import org.alexcawl.forecaster.network.NetworkModule

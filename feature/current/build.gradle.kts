@@ -1,5 +1,6 @@
 plugins {
     id("library-convention")
+    id("org.jetbrains.kotlin.android")
 }
 
 android {

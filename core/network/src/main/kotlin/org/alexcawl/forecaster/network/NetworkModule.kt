@@ -30,7 +30,6 @@ interface NetworkModule {
 
     companion object {
         @Provides
-        @Singleton
         fun provideKtorClient(): HttpClient = HttpClient(OkHttp) {
             install(ContentNegotiation) {
                 json(
@@ -55,17 +54,14 @@ interface NetworkModule {
         }
 
         @Provides
-        @Singleton
         @CurrentWeatherUrl
         fun provideCurrentWeatherUrl(): String = "https://api.openweathermap.org/data/2.5/weather"
 
         @Provides
-        @Singleton
         @HourlyWeatherUrl
         fun provideHourlyWeatherUrl(): String = "https://api.openweathermap.org/data/2.5/forecast"
 
         @Provides
-        @Singleton
         @DailyWeatherUrl
         fun provideDailyWeatherUrl(): String = "https://api.openweathermap.org/data/2.5/forecast/daily"
     }

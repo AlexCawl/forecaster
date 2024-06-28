@@ -17,10 +17,7 @@ import kotlinx.coroutines.launch
 import org.alexcawl.forecaster.common.Consumer
 import org.alexcawl.forecaster.common.Producer
 
-abstract class BaseStore<S, A>(
-    storeScope: CoroutineScope,
-    initialState: S
-) : Producer<S>, Consumer<A>, ViewModel(storeScope) {
+abstract class BaseStore<S, A>(initialState: S) : Producer<S>, Consumer<A>, ViewModel() {
     private val innerState: MutableStateFlow<S> = MutableStateFlow(initialState)
     private val innerActions = MutableSharedFlow<A>(0, Int.MAX_VALUE)
     private val dispatchChannel = Channel<suspend StoreContext<S>.() -> Unit>(Channel.UNLIMITED)

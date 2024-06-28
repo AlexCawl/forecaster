@@ -48,18 +48,24 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 }
 
-val java = JavaVersion.valueOf(libs.versions.java.get())
-val sdkCompile = libs.versions.sdkCompile.get().toInt()
-val sdkTarget = libs.versions.sdkTarget.get().toInt()
-val sdkMin = libs.versions.sdkMin.get().toInt()
+val applicationName: String = libs.versions.name.get().toString()
+val java: JavaVersion = JavaVersion.valueOf(libs.versions.java.get())
+val sdkCompile: Int = libs.versions.sdkCompile.get().toInt()
+val sdkTarget: Int = libs.versions.sdkTarget.get().toInt()
+val sdkMin: Int = libs.versions.sdkMin.get().toInt()
+val versionAsCode: Int = libs.versions.versionCode.get().toInt()
+val versionAsName: String = libs.versions.versionName.get().toString()
 
 android {
     compileSdk = sdkCompile
 
     defaultConfig {
+        applicationId = applicationName
         targetSdk = sdkTarget
         minSdk = sdkMin
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        versionCode = versionAsCode
+        versionName = versionAsName
     }
 
     lint {
@@ -78,6 +84,10 @@ android {
                 "proguard-rules.pro"
             )
         }
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 
     compileOptions {

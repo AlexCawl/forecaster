@@ -1,9 +1,9 @@
 plugins {
-    id("application-convention")
+    id("library-convention")
 }
 
 android {
-    namespace = libs.versions.name.get()
+    namespace = "org.alexcawl.forecaster.current"
 }
 
 dependencies {
@@ -11,5 +11,4 @@ dependencies {
     implementation(project(":core:data"))
     implementation(project(":core:network"))
     implementation(project(":core:ui"))
-    implementation(project(":feature:current"))
 }

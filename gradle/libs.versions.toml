@@ -29,6 +29,8 @@ sdkCompile = "34"
 sdkTarget = "34"
 sdkMin = "24"
 java = "VERSION_1_8"
+versionCode = "1"
+versionName = "1.0"
 
 [libraries]
 # Kotlin

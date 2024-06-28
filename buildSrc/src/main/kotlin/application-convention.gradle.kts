@@ -30,6 +30,7 @@ dependencies {
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.lottie)
     implementation(libs.androidx.fragment)
+    implementation(libs.androidx.splash)
 
     // Network
     implementation(libs.ktor.client)

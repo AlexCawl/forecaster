@@ -29,6 +29,7 @@ dependencies {
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.lottie)
     implementation(libs.androidx.fragment)
+    implementation(libs.androidx.splash)
 
     // Test
     testImplementation(libs.junit)

@@ -12,7 +12,11 @@ class NavigationStore @AssistedInject constructor(
         fun create(): NavigationStore
     }
 
-    override fun handle(action: NavigationAction) {
-        TODO("Not yet implemented")
+    override fun handle(action: NavigationAction) = when (action) {
+        NavigationAction.NavigateToCurrentWeatherFragment -> task {
+            reduce {
+                NavigationState.CurrentWeather
+            }
+        }
     }
 }

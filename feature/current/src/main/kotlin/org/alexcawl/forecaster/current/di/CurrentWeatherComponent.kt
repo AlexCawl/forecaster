@@ -1,9 +1,7 @@
 package org.alexcawl.forecaster.current.di
 
 import dagger.Component
-import org.alexcawl.forecaster.current.ui.card.CurrentWeatherInfoFragment
-import org.alexcawl.forecaster.current.ui.card.CurrentWeatherInfoStore
-import org.alexcawl.forecaster.current.ui.main.CurrentWeatherFragment
+import org.alexcawl.forecaster.current.ui.CurrentWeatherFragment
 
 @CurrentWeatherScope
 @Component(dependencies = [CurrentWeatherComponentDeps::class])
@@ -14,6 +12,4 @@ interface CurrentWeatherComponent {
     }
 
     fun inject(currentWeatherFragment: CurrentWeatherFragment)
-
-    fun inject(currentWeatherInfoStore: CurrentWeatherInfoFragment)
 }

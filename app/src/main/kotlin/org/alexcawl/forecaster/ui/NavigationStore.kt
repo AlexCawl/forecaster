@@ -6,7 +6,7 @@ import org.alexcawl.forecaster.ui.mvi.BaseStore
 
 class NavigationStore @AssistedInject constructor(
 
-) : BaseStore<NavigationState, NavigationAction>(NavigationState.Loading) {
+) : BaseStore<NavigationState, NavigationAction>(NavigationState.Loading), Navigator {
     @AssistedFactory
     interface Factory {
         fun create(): NavigationStore
@@ -18,5 +18,9 @@ class NavigationStore @AssistedInject constructor(
                 NavigationState.CurrentWeather
             }
         }
+    }
+
+    override fun navigate(destination: String): Boolean {
+        TODO("Not yet implemented")
     }
 }

@@ -1,4 +1,4 @@
-package org.alexcawl.forecaster.current.ui.main
+package org.alexcawl.forecaster.current.ui
 
 import android.os.Bundle
 import androidx.viewbinding.ViewBinding

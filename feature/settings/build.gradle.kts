@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace = "org.alexcawl.forecaster.current"
+    namespace = "org.alexcawl.forecaster.settings"
 }
 
 dependencies {

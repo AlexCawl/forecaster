@@ -1,4 +1,4 @@
-package org.alexcawl.forecaster.current.ui.main
+package org.alexcawl.forecaster.current.ui
 
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
